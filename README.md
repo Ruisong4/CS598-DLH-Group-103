@@ -58,6 +58,24 @@ First, you should go to [MIMIC-III Clinical Database](https://physionet.org/cont
 
 ## Table of results
 
+### Baseline Model
+
+| Task                         | Accuracy |  F1   | Recall | Prescision |
+| :--------------------------- | :------: | :---: | :----: | :--------: |
+| Reported General Readmission |  0.694   | 0.674 | 0.633  |   0.720    |
+| Reported 30-day Readmission  |  0.672   | 0.656 | 0.625  |   0.690    |
+| General Readmission          |  0.703   | 0.718 | 0.746  |   0.693    |
+| 30-day Readmission           |  0.710   | 0.706 | 0.727  |   0.686    |
+
+### CNN Model
+
+| Task                         | Accuracy |  F1   | Recall | Prescision |
+| :--------------------------- | :------: | :---: | :----: | :--------: |
+| Reported General Readmission |  0.757   | 0.756 | 0.754  |   0.759    |
+| Reported 30-day Readmission  |  0.693   | 0.674 | 0.633  |   0.698    |
+| General Readmission          |  0.701   | 0.712 | 0.720  |   0.704    |
+| 30-day Readmission           |  0.652   | 0.666 | 0.716  |   0.623    |
+
 ## Dataset downloading Link
 
 [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/) Approval from Physionet Required </br>
