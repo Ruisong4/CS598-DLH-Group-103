@@ -27,6 +27,14 @@ this project, we will reproduce the model demonstrated in the paper to predict h
 
 `CNN.ipynb`: Implement CNN model with Word2Vec word embedding using Pytorch.
 
+## Running the code
+
+1. pre-processing code:
+
+2. Baseline model:
+
+3. CNN model: if using google colab, place the output files from the pre-processing step and the pre-trained word2vec weights under the root directory of Google Drive, then execute the cells from top to bottom
+
 ## Requirments
 
 `pandas==1.4.0`
@@ -41,6 +49,7 @@ this project, we will reproduce the model demonstrated in the paper to predict h
 
 `nltk==3.7`
 
-## Dataset
+## Dataset downloading Link
 
-[MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/)
+[MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/) Approval from Physionet Required </br>
+[Pre-trained Word2Vec Weights](https://bio.nlplab.org/) publicly available
