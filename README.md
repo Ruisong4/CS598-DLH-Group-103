@@ -19,6 +19,13 @@ CNN model is used to extract features and learn
 useful information from the document vectors. In
 this project, we will reproduce the model demonstrated in the paper to predict heart failure readmission and its corresponding baseline models.
 
+## Citation to the original paper
+Liu, X., Chen, Y., Bae, J., Li, H., Johnston, J., & Sanger, T. (2019, November). Predicting heart failure readmission from clinical notes using deep learning. In 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) (pp. 2642-2648). IEEE.
+
+## Data download instruction
+First, you should go to [MIMIC-III Clinical Database](https://physionet.org/content/mimiciii/1.4/), and then scroll down to the bottom of the page and download three compressed CSV files: ADMISSIONS.csv.gz, DIAGNOSES_ICD.csv.gz, NOTEEVENTS.csv.gz. After that, you should create a new folder called ‘mimic-iii-clinical-database-1.4’ under current directory and uncompress these CSV files into this folder. 
+
+
 ## File Structure
 
 `pre_preprocess.ipynb`: Preprocess admission data, digonsis data and clinical notes from MIMIC-iii dataset.
@@ -29,13 +36,13 @@ this project, we will reproduce the model demonstrated in the paper to predict h
 
 ## Running the code
 
-1. pre-processing code:
+1. pre-processing code: Data preprocessing is implemented in the Jupyter Notebook data_preprocess.ipynb. Once you download and uncompress the data following the instruction above, you can open that Jupyter Notebook and run all cells to preprocess the data. We have added comments for each cell, and finally, the preprocessing code will save the training data and its corresponding label for general heart failure readmission and 30 days heart failure readmission prediction as .txt files in the new created directory called 'CS598_DATA'.
 
-2. Baseline model:
+2. Baseline model: Open `random_forest.ipynb` in Google Colab or Jupyter Notebook, execute all cells from top to bottom, it will load the dataset and build baseline model and finally evaluate and print the model performance. We have added the comment for each cell.
 
-3. CNN model: if using google colab, place the output files from the pre-processing step and the pre-trained word2vec weights under the root directory of Google Drive, then execute the cells from top to bottom
+3. CNN model: If using google colab, place the output files from the pre-processing step and the pre-trained word2vec weights under the root directory of Google Drive, then execute the cells from top to bottom. We have added the comment for each cell.
 
-## Requirments
+## Dependencies
 
 `pandas==1.4.0`
 
@@ -48,6 +55,8 @@ this project, we will reproduce the model demonstrated in the paper to predict h
 `torch==1.11.0`
 
 `nltk==3.7`
+
+## Table of results
 
 ## Dataset downloading Link
 
